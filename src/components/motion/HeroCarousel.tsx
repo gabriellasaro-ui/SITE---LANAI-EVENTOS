@@ -1,0 +1,111 @@
+'use client'
+
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { blur, type Photo } from '@/content/photos'
+import { cn } from '@/lib/cn'
+
+type Props = {
+  photos: Photo[]
+  /** Tempo de cada foto, em ms */
+  interval?: number
+  /** Classes extras para reposicionar os indicadores */
+  dotsClassName?: string
+}
+
+/**
+ * Fundo do topo em carrossel: troca com fade lento e zoom suave (Ken Burns) a cada `interval`.
+ * Os indicadores (traços) ficam na base; o ativo "enche" durante o tempo da foto.
+ */
+export function HeroCarousel({ photos, interval = 6500, dotsClassName }: Props) {
+  const [active, setActive] = useState(0)
+  // A que está saindo mantém o zoom durante o fade (sem "pular" de volta ao tamanho normal)
+  const [prev, setPrev] = useState(-1)
+  // Quantas fotos já estão montadas: a 1ª entra na hora; as próximas são preparadas antes de cada troca
+  const [mounted, setMounted] = useState(1)
+
+  useEffect(() => {
+    const warm = window.setTimeout(() => setMounted((m) => Math.max(m, 2)), 2500)
+    return () => window.clearTimeout(warm)
+  }, [])
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setPrev(active)
+      setActive((active + 1) % photos.length)
+      setMounted((m) => Math.min(photos.length, m + 1))
+    }, interval)
+    return () => window.clearInterval(id)
+  }, [active, interval, photos.length])
+
+  return (
+    <>
+      <div aria-hidden="true" className="absolute inset-0 -z-20 overflow-hidden">
+        {photos.map((photo, i) => (
+          <div
+            key={photo.src}
+            className={cn(
+              'absolute inset-0 transition-opacity duration-[1600ms] ease-in-out',
+              i === active ? 'opacity-100' : 'opacity-0',
+            )}
+          >
+            {i < mounted && (
+              <Image
+                src={photo.src}
+                alt=""
+                fill
+                quality={85}
+                priority={i === 0}
+                sizes="100vw"
+                {...blur(photo)}
+                className={cn('object-cover', (i === active || i === prev) && 'animate-kenburns')}
+              />
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={cn(
+          'container-site absolute inset-x-0 bottom-24 z-10 flex items-center justify-center lg:justify-between',
+          dotsClassName,
+        )}
+      >
+        <p aria-hidden="true" className="eyebrow hidden items-center gap-3 text-white/75 lg:flex">
+          <span className="text-accent-200">{String(active + 1).padStart(2, '0')}</span>
+          <span className="h-px w-6 bg-white/40" />
+          <span key={active} className="animate-rise">
+            {photos[active].caption}
+          </span>
+        </p>
+        <div className="flex justify-center gap-2.5" role="group" aria-label="Fotos do topo">
+          {photos.map((photo, i) => (
+            <button
+              key={photo.src}
+              type="button"
+              onClick={() => {
+                if (i === active) return
+                setPrev(active)
+                setActive(i)
+                setMounted((m) => Math.max(m, i + 1))
+              }}
+              aria-label={`Mostrar foto ${i + 1}: ${photo.caption}`}
+              aria-pressed={i === active}
+              className="group relative grid h-6 w-12 place-items-center"
+            >
+              <span className="relative block h-[2px] w-full overflow-hidden bg-white/35 transition group-hover:bg-white/60">
+                {i === active && (
+                  <span
+                    key={active}
+                    className="bg-primary-300 absolute inset-0 origin-left"
+                    style={{ animation: `carousel-fill ${interval}ms linear forwards` }}
+                  />
+                )}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}

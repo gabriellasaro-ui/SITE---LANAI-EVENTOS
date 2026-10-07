@@ -1,0 +1,352 @@
+{
+ "corredorLuzes": {
+  "slug": "cerimonia-corredor-de-luzes-noite",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Jardim",
+  "cap": "Túnel de luzes",
+  "alt": "Corredor de cerimônia sob as árvores iluminado por cordões de luz à noite, com cadeiras e flores brancas",
+  "src": "07-previa-nathalia-e-fernando-09051",
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsAAsBMJQBOgMXh4T/HadSGwAD+9vIsOSz1n9/j/Sm/D1m5MgLyXRJze0RD2Em+GHQ6mz2zzjtS7SwLdBNeoq5v2aJa9dCtm6ZFOMsRiigHyqAAAA=="
+ },
+ "cerimoniaJabuticabeiras": {
+  "slug": "cerimonia-sob-as-jabuticabeiras",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Jardim",
+  "cap": "Cerimônia sob as jabuticabeiras",
+  "alt": "Altar montado sob a alameda de jabuticabeiras, com flores brancas e cadeiras de madeira",
+  "src": "making-of-noiva-16",
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAAsBMJYgCdAYvrGOdI06AAP7pHvUxZFySOp+ubIoOVe1pqPv7GtxwFEepUNhdprGMpICRBu7x/Pb6WZ2Ggu3bX1RL9c31u7sSKdLS/1VT0M37UUcFAAA="
+ },
+ "altarFlores": {
+  "slug": "altar-flores-jardim",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Jardim",
+  "cap": "Altar no jardim",
+  "alt": "Altar com cortinas brancas e arranjos de flores entre as árvores do jardim",
+  "src": "6-a-30",
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoQAAsAAsBMJbACdAENga9F0KbaAP75LTTw8a6mcZK2/Veyz1njC+Oufq1SzWDf/qitM5p8V8o4JOWwiE7HRzhOw6KINw3El/U8QCEcE6epXPuSX7Hb5+cAwVa0AAAA"
+ },
+ "saidaNoivos": {
+  "slug": "saida-dos-noivos",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Casamentos",
+  "cap": "A saída dos noivos",
+  "alt": "Noivos saindo da cerimônia sob as árvores, aplaudidos pelos convidados",
+  "src": "3-c-70",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoQAAsAAsBMJZACdAYvDjDBHUVOWgAA/veb9Yk8ANB2draKDOHGdhPT057u3ydVsM5k8v3WmoDrwLmUfyiP+07y2/ufxYHF45pqlY+Q9yQNEOAW9x9DoxbVkd7TmqPZNhSc518dbIaAAA=="
+ },
+ "salaoLustre": {
+  "slug": "salao-lustre-de-cristal",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Salão",
+  "cap": "O salão",
+  "alt": "Salão com telhado colonial, lustre de cristal, mesas redondas e janelas para o jardim",
+  "src": "41-previa-nathalia-e-fernando-00429-1",
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAAsBMJZgCdAEXZ2MJgaf/gAD+9pRBP0jsj2gRL7w6a3+slaV+6T7FpUP0EEDKxZZ4ijjyzp6BB0L58VAc4404i1rW75UrJ64Wy3xHTu9o7BZBYEGKb2QAAA=="
+ },
+ "salaoDia": {
+  "slug": "salao-montado-de-dia",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Salão",
+  "cap": "Salão de dia",
+  "alt": "Salão montado durante o dia, com lustre, mesas e grandes janelas para o verde",
+  "src": "ana-e-felipe-cer-00575-1",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAsAAsBMJaACdACvo3VCYAD++FmrbsdzVtePuW7ASQjQItAgyGMI+DZyqUe2Y+waTOH24e736V4QUvSfwJVawLUlDxJ3yhqUCfcS22gAAA=="
+ },
+ "salaoMesas": {
+  "slug": "salao-mesas-de-madeira",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Salão",
+  "cap": "Mesas postas",
+  "alt": "Mesas de madeira postas no salão, com flores brancas e cadeiras douradas",
+  "src": "amandaeandre-01843-1",
+  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAgCdASoQAAsAAsBMJZACdAYubn1D3tEyfoQAAP7HLFZ0pyrKj25FPWritdi0NJN/i96J9qsRYXeiIsU/fbfrW9QVAXC2YxwOWNfllmXtkUoxaPZxt1Rm4wcuyLoA4ntX+PqjXb4Z2OpxiAA="
+ },
+ "salaoNoite": {
+  "slug": "salao-festa-noite",
+  "w": 2400,
+  "h": 1599,
+  "cat": "Salão",
+  "cap": "A festa",
+  "alt": "Salão à noite com mesas decoradas, iluminação azul e lustres para a festa",
+  "src": "abg-9757",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoQAAsAAsBMJZACdAYu5VtHnzVQAAD+9v0gEEVfR6mgY/2+RP/Z6lpI2n/zI4tkF6efToUedZkxxA2Ci7LIJswiMAPdhZmr/mmO4AeTxQCPWjGviMy7pYcUvsAlIeUBlE8nl8uq+gAAAA=="
+ },
+ "jardimMesas": {
+  "slug": "jardim-mesas-sob-as-arvores",
+  "w": 2400,
+  "h": 1598,
+  "cat": "Jardim",
+  "cap": "Recepção no jardim",
+  "alt": "Mesas da recepção montadas à sombra das árvores, sobre caminho de pedras",
+  "src": "wd-izabellaediego-572-1",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsAAsBMJQBOgCLO7UtfsPCQAAD+8OgZxUwZNullmZb7PQdezh6lKD9ibAwdoCFKyQtM1XV6csag9rqIL0F13XYT9HSDLLIiuMJpJzKKJ+AA"
+ },
+ "pergolado": {
+  "slug": "pergolado-area-externa",
+  "w": 2400,
+  "h": 1601,
+  "cat": "Jardim",
+  "cap": "Pergolado",
+  "alt": "Pergolado de madeira e tijolos com mesas montadas, cercado de plantas",
+  "src": "wedding-esthefanie-e-vitor-0049",
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQAQCdASoQAAsAAsBMJZgCdADN+oAikAD+wHtU597GPQ72AfHp3YWp3dFMYD+4AU8qp7tQFnIAbGSg3EGhsrHS5LZx3AkhIQKWapap63EInanV370nAazhdLaNVMwmpJuqgAAA"
+ },
+ "pergoladoMesa": {
+  "slug": "pergolado-mesa-posta",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Jardim",
+  "cap": "Sob o pergolado",
+  "alt": "Mesa posta sob o pergolado iluminado, com flores e velas",
+  "src": "wedding-esthefanie-e-vitor-0038",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoLABAAAsBMJZACdAYv/kr3atpTLAAA/iT9OR6RuO5SmDDpaQ6jAVHkHIeQQGTcptsxB4gT34mGhU6eQ6Qj2m9V8MVQEhKCCTe6V5VpTj9Z5zdlh0Pd92TfjrAyyeI/LEXoFrLE38AAAA=="
+ },
+ "caminhoJardim": {
+  "slug": "caminho-de-pedras-jardim",
+  "w": 2400,
+  "h": 1599,
+  "cat": "Jardim",
+  "cap": "Caminho do jardim",
+  "alt": "Caminho de pedras no jardim decorado com flores coloridas e lanternas",
+  "src": "whatsapp-image-2024-06-12-at-11-10-56",
+  "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAsAAsBMJZgCdAYsP2WNkIP2/gAA/qxIAF04iolacWE7b65EW3JIXWz5GGrFEpuisLDMnRc0Lwat5YwvgpTwvJ5wOhr/yNEfp9WKGTPlU1GtLYtpMYZE4Tmf5WN8AAA="
+ },
+ "noivosAltar": {
+  "slug": "noivos-altar-por-do-sol",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "O beijo no altar",
+  "alt": "Noivos se beijando no altar florido entre as árvores, ao pôr do sol",
+  "src": "117-camilaevictor-09668",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoLABAAAsBMJaACdAYula3c7kwjegAAAP7weyE5pMuHV9sMQ7CUbqm8IsSRqmzdrPVvNE7uBuMaErlLI0K/B0aRUduurNX07yDlwidDFSOpxpX4L7j9LsWQaXVdbZPy7Iq2o3PYKCWAAA=="
+ },
+ "cerimoniaPorDoSol": {
+  "slug": "cerimonia-arvores-por-do-sol",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "Cerimônia ao pôr do sol",
+  "alt": "Cerimônia ao ar livre sob as árvores, com a luz dourada do fim de tarde",
+  "src": "114-camilaevictor-09558",
+  "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoLABAAAsBMJQBOgMWgtpH73IT1AAD+9yl82WdZM//eLDIhAhd8EBLU2yfMgTPl1nBaE2I3ST1mytLxXt+KijHhIJs+kUXYSsrS/J7Ldq3kMGisldPJZWZJV4LeGQevslcAagAA"
+ },
+ "corredorFlores": {
+  "slug": "corredor-flores-luminarias",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Jardim",
+  "cap": "Corredor de flores",
+  "alt": "Corredor da cerimônia com flores brancas e luminárias entre as árvores",
+  "src": "170-dia-d-04759",
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoLABAAAsBMJQBOgCHTA+B+YAD++Ruerx+mpoUsyF8bnPmVS05pTRe/IClv0Hobk9gWQOt0YeL9vh0WLEUPSeHeuToOVNIVQ9AG0AAA"
+ },
+ "passarelaJardim": {
+  "slug": "passarela-do-jardim",
+  "w": 1598,
+  "h": 2400,
+  "cat": "Jardim",
+  "cap": "Passarela",
+  "alt": "Passarela clara entre as árvores, decorada com flores amarelas",
+  "src": "casamento-luciana-e-lucas-202",
+  "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoLABAAAsBMJbACdADdSVJ2gagAAP70ttGQefxy1yP49rbZDoC2chOqHD7XXArh2Yv8jLNxboo7hsHO0Tz0eUl/uENSvNsQpJ75GFLePwYOOxDq6Ma+2gMgxNwlVSRRLgAAAA=="
+ },
+ "suiteMadrinhas": {
+  "slug": "suite-da-noiva-madrinhas",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Ambientes",
+  "cap": "Suíte da noiva",
+  "alt": "Noiva e madrinhas brindando na suíte da noiva, com o letreiro neon Lanai",
+  "src": "img-4353",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsAAsBMJbACdLoAArBAu22DAAD40Z2MMfTOvTEZQdEyIeKYxin4Doy78PU9RO5odkx9fZZYuQqPEXyXb7a4lTIv/FufpJJfh/qvEFJ1wAAA"
+ },
+ "suitePreparacao": {
+  "slug": "suite-da-noiva-preparacao",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Ambientes",
+  "cap": "Making of",
+  "alt": "Noiva sendo maquiada na suíte da noiva, com o letreiro Lanai ao fundo",
+  "src": "27-vitor-e-raquel-05567",
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoLABAAAsBMJZACdAD5fojRaMAA+unmJByHEk3GM7VztbdNKcsn33HkAXvk3lXNRIBX33KPUtChf752q60/F0kkPXTn5NjTJHpESIH3zSgjVLe31SBh6qsy7yAAAA=="
+ },
+ "suiteVestido": {
+  "slug": "suite-da-noiva-vestido",
+  "w": 1597,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "A noiva",
+  "alt": "Noiva de vestido na suíte, ao lado de uma daminha",
+  "src": "prev-larimarcus-25",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoLABAAAsBMJYgCdAYvrzYkgeut2OAAAP6YQrV9XRuq7BUVfxPtQVSQaRN0WcZBD4uf0pg24Blf9YYGwwOj2ktkYVafOuuDM1hXkX8K/4cUiekVGJnuTbpqUr+6AzseEdqVer2IZwAAAA=="
+ },
+ "noivaMakingOf": {
+  "slug": "noiva-making-of",
+  "w": 2400,
+  "h": 1600,
+  "cat": "Casamentos",
+  "cap": "Preparação",
+  "alt": "Noiva sorrindo durante a preparação, segurando uma caixa de presente",
+  "src": "tales-e-erika-renovacao-136",
+  "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQAgCdASoQAAsAAsBMJZACdAYuldhB7IwAAPjUSQbUpOse8ygFPdHFK1CBa9dV7Qez+Y2BVGM76o2b9CXoZZsyXJND4NCJ7cWWCh85ZoyXAHdayve295z5XUoPkOqeLhkc856ujzVGJm/VkTwAAA=="
+ },
+ "pubSinuca": {
+  "slug": "pub-do-noivo-sinuca",
+  "w": 2400,
+  "h": 1444,
+  "cat": "Ambientes",
+  "cap": "Pub do noivo",
+  "alt": "Pub do noivo com mesa de sinuca, banquetas e piso geométrico",
+  "src": "i-qldt7dv-xl",
+  "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoQAAoAAsBMJQBOgCKV8648wLAA/vauJ+fJJrF6WLShXR9yc85smOuP0/6ONjCfhq75QqTAr6ETuRA4RHNezSuoP62OP59AjEyHRTZDwdeqqAAA"
+ },
+ "pubLounge": {
+  "slug": "pub-do-noivo-lounge",
+  "w": 2400,
+  "h": 1444,
+  "cat": "Ambientes",
+  "cap": "Lounge do pub",
+  "alt": "Lounge do pub do noivo com sofá de couro e letreiro Lanai iluminado",
+  "src": "i-w8327sx-xl",
+  "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAoAAsBMJbACdADCtx5WgJAA/vrv4dKPS4E8y6OZ5Vwlm/fyUfod6aFEdSpO0WYjbAcvHTJKcja8CYs5kX4bq4wSi0foRua8pIEn5wAAAA=="
+ },
+ "pubMesa": {
+  "slug": "pub-do-noivo-mesa",
+  "w": 2400,
+  "h": 1444,
+  "cat": "Ambientes",
+  "cap": "Pub: sinuca",
+  "alt": "Mesa de sinuca do pub do noivo com o logo Lanai",
+  "src": "i-scvjnjk-xl",
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAAsBMJZACdAEPDOzpTca4AP752PeXgVNOi7zC12lIUB4e1unba+ef0cBWSdafyjLNMNJgh2v2/tyPfGDZejKbtEWNcNdBTLIgw3Qk9fKRHQAAAA=="
+ },
+ "pubAdega": {
+  "slug": "pub-do-noivo-adega",
+  "w": 2400,
+  "h": 1444,
+  "cat": "Ambientes",
+  "cap": "Pub: adega",
+  "alt": "Adega climatizada e quadros no pub do noivo",
+  "src": "i-qblbq7t-xl",
+  "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAoAAsBMJZgCdADHj1eY0gAA/eOXayz3fx8+GxkYf22UwNveenp+xJ5VmmV7NX8RjrH2F3UHtgTwfvb+DhdiPUVffGW2hOW3MpYvIthSeYwnCUAAAA=="
+ },
+ "pistaPrimeiraDanca": {
+  "slug": "pista-primeira-danca",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "A primeira dança",
+  "alt": "Noivos dançando na pista do salão, cercados pelos convidados",
+  "src": "thaisguilherme-425",
+  "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoLABAAAsBMJQBOj+ADM51Q/uqp0AD++mkFw8tJjGu7bUxwncmNaE7ceJZNpR/Ls8/LT679tvAYBAhI4b+XpRjSgxOCaNGNHyPH8Aw4AAA="
+ },
+ "pistaNoiva": {
+  "slug": "pista-noiva",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "A noiva na pista",
+  "alt": "Noiva comemorando na pista com os convidados",
+  "src": "ji6a5619-2",
+  "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQAgCdASoLABAAAsBMJQBYebQAPwkWd33UAP768g6HgqeHMcveSKUDOYrZqFCN5lyaunApcDVxTeUgU6qxoKRHE20c/Qe0FM7MTuaenNR7DHVym/xXiux3C3NVyn+yjaGoNgAA"
+ },
+ "pistaShow": {
+  "slug": "pista-show",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Salão",
+  "cap": "Show na pista",
+  "alt": "Show com luzes coloridas na pista do salão",
+  "src": "juliana-505",
+  "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoLABAAAsBMJZQCsAEPAtwHHMtAAP77a4dulde/wsKKOMHqigkTJRg+oOSamU63nGNfnV8PeSaI+mnJ4tNtCtPMYdWJwIjmK49LLAAA"
+ },
+ "valsa": {
+  "slug": "valsa-dos-noivos",
+  "w": 1600,
+  "h": 2400,
+  "cat": "Casamentos",
+  "cap": "A valsa",
+  "alt": "Noivos dançando a valsa no salão, sob os lustres",
+  "src": "wedding-esthefanie-e-vitor-1091",
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoLABAAAsBMJZQAAu05R5g2pAAA/veqL8hIu2FeY92sYNeE8KY3jSJNoYQ4OxvF7j7E2A0oLQYK0vAQDgoKFFDpLhTVBF3D48WVmrUt255P3DLNkCtgAC8OjwAAAA=="
+ },
+ "brinquedoteca1": {
+  "slug": "brinquedoteca-1",
+  "w": 2400,
+  "h": 1800,
+  "cat": "Ambientes",
+  "cap": "Brinquedoteca",
+  "alt": "Brinquedoteca colorida com mesinha, estante de brinquedos e televisão",
+  "src": "whatsapp-image-2025-01-13-at-18-48-42",
+  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQAAwAAsBMJbACdADGZaiLjQAA/uW+90hskx989a7iYMLa09Ophpt6dStsl0q5yphsGOJ5/i2MYZrEjla6I+yyNqPpDUntbpXF7YC+Q2Mi8bMW//Vh5ngijop5tpTSbhWxjLQAAAA="
+ },
+ "brinquedoteca2": {
+  "slug": "brinquedoteca-2",
+  "w": 2400,
+  "h": 1800,
+  "cat": "Ambientes",
+  "cap": "Espaço kids",
+  "alt": "Espaço kids com cadeirinhas coloridas e túnel de brincar",
+  "src": "whatsapp-image-2025-01-13-at-18-48-43-1",
+  "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQAAwAAsBMJbACdACRXpJ6uAAA/VN0elVpXPBav3Q+/Ifq6nGDcWkV0Kj9nexKsVXiO36sV7ARLKpykqhu6HAt8+qs/HpiHx7XDpBJYG3ascpAev8XJyMXI66xDvag2ei0LsgAAAA="
+ },
+ "brinquedoteca3": {
+  "slug": "brinquedoteca-3",
+  "w": 2400,
+  "h": 1800,
+  "cat": "Ambientes",
+  "cap": "Brinquedoteca: berço",
+  "alt": "Brinquedoteca com berço, mesinha e painel ilustrado",
+  "src": "whatsapp-image-2025-01-13-at-18-48-45",
+  "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAwAAsBMJbACdAD2Pvfo5Yo0gADOOLJV9h3Qnn/TNyUtOsqJU0ANTRvHtcpsSEk4gI8GP8m/aDvI4HU3RPK+HZBbZz2PrMZnXfh3DvlDU+BEDzk7uZ3QyK0CnQbLMfckAAAA"
+ },
+ "brinquedoteca4": {
+  "slug": "brinquedoteca-4",
+  "w": 1801,
+  "h": 2400,
+  "cat": "Ambientes",
+  "cap": "Brinquedos",
+  "alt": "Cantinho de brinquedos com estante e cadeirinhas",
+  "src": "whatsapp-image-2025-01-13-at-18-48-49",
+  "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoMABAAAsBMJbACdAEfA5+6Ww8JaQAA9rFrKDGSJ5kVsIiU9+4q4Qin+VpDlV+4RkzfVmx3ugfgyVxWJRwhVAEiKxhBWGE/DTH5hF/VxH5WjvdFr8s5+tPOj0ZoAA=="
+ },
+ "gazeboNoite": {
+  "slug": "gazebo-noite",
+  "w": 2400,
+  "h": 1391,
+  "cat": "Jardim",
+  "cap": "O gazebo à noite",
+  "alt": "Gazebo de madeira e tijolos iluminado à noite, com caminho de pedras",
+  "src": "bg-2",
+  "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoQAAkAAsBMJYwCdAEO+Wd8oAD++l5Hf7IkuLe1IQuwRPlzoAA="
+ },
+ "pergoladoDoces": {
+  "slug": "pergolado-mesa-de-doces",
+  "w": 2400,
+  "h": 1391,
+  "cat": "Jardim",
+  "cap": "Mesa de doces",
+  "alt": "Mesa de doces sob o pergolado iluminado à noite",
+  "src": "bg-3",
+  "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAkAAsBMJaACdAD2PVpK0gAA/vr4seVrqPvb9Ab3mh7JvyBXULVWHQdZXU8FKcvHa8M/63KsX/CFjmFqWYtP05vGOQDoXWauKhtAsh5prhNVEAA="
+ },
+ "jardimIluminado": {
+  "slug": "jardim-iluminado-noite",
+  "w": 2400,
+  "h": 1601,
+  "cat": "Jardim",
+  "cap": "Jardim iluminado",
+  "alt": "Árvores do jardim iluminadas em verde à noite",
+  "src": "decoracoes-decoracao-lanai-06",
+  "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsAAsBMJbACdAYvXvz/aAb2kAD+9eFEh71Ejk84FM7e+wOkXNXAjGPkVUAvFRvv+WzzVAqyQs8J/Pnf3WWvzW8rTsG5amlG0k20l78nhu+z5SKififcAAA="
+ }
+}
