@@ -11,7 +11,7 @@ import { FinalCta } from '@/components/sections/FinalCta'
 
 const title = 'Galeria de casamentos no Lanai, em BH'
 const description =
-  'Fotos de casamentos no Lanai Eventos, na Pampulha: cerimônias sob as jabuticabeiras, jardins, salão, suíte da noiva, pub do noivo e brinquedoteca.'
+  'Fotos de casamentos no Lanai Eventos, na Pampulha: cerimônias sob as jabuticabeiras, jardins, salão, Spa da Noiva, Pup Noivo e brinquedoteca.'
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/galeria' })
 

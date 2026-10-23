@@ -39,7 +39,7 @@ Dia a dia:
 - Atualizar o site: envie os arquivos novos e rode `docker compose up -d --build` de novo.
 - Logs: `docker compose logs -f` · Status: `docker compose ps` (mostra `healthy` quando o site responde).
 - As variáveis `NEXT_PUBLIC_*` são gravadas **no build**: se mudar, rode com `--build`. Os webhooks são lidos ao iniciar: basta `docker compose up -d`.
-- O build precisa de internet (instala os pacotes do npm e baixa as fontes do Google).
+- O build precisa de internet apenas para instalar os pacotes do npm; a Sansation é servida localmente pelo próprio site.
 - As fotos otimizadas ficam em cache no volume `lanai-eventos_next-cache`, que sobrevive às atualizações.
 - Os 3 sites do grupo podem rodar no mesmo servidor: Let's Go na porta 3000, Liac na 3001 e Lanai na 3002 (cada um com o próprio `docker compose`).
 
@@ -50,7 +50,7 @@ ID VISUAL/                  material recebido do cliente (cor + logo)
 referência/                 wireframe/copy aprovados, se houver
 statics/image               originais: casamentos-com-br/, site-antigo/, logo-x4.png e photos-map.json
                             (chave, arquivo, medidas, categoria, legenda e alt de cada foto; gera src/content/photos.ts)
-public/images/fotos         35 fotos tratadas em WebP (realce com IA misturado ao original, até 2400 px)
+public/images/fotos         35 fotos tratadas em WebP (super-resolução preservando o original, até 3840 px)
 public/images/marca         logo horizontal e vertical (colorido e marfim), PNG + WebP leve, ícones
 public/images/og            imagens de compartilhamento 1200x630
 src/
@@ -72,14 +72,14 @@ src/
 ## Identidade visual (montada a partir da cor e do logo)
 
 - Cores: sálvia/oliva do logo (`primary`), cacau (`accent`), verde-floresta nos blocos escuros (`ink`), marfim e areia nos fundos (`paper`, `mist`).
-- Fontes: Bodoni Moda (títulos, Didone de alto contraste com destaques em itálico) e Jost (texto). Trocar se o cliente tiver fontes oficiais.
+- Fonte: Sansation (Light, Regular e Bold, com itálicos), hospedada localmente sob a licença SIL Open Font License 1.1.
 - Elementos: fotos em arco, numerais romanos, grão fino nos blocos escuros, fotos que abrem como cortina ao rolar. Os dois círculos verdes da imagem da ID visual são amostras de cor, **não** fazem parte do logo nem do site.
 - Logo: só o nome em script, recortado do arquivo enviado (fundo branco removido); versão marrom e versão marfim (fotos e fundos escuros). Ícones com o "L" do logo sobre verde-floresta.
 
 ## Fotos
 
-- Originais em `statics/image`. Tratamento: marca removida no original → Real-ESRGAN x4plus no original limpo (até 1600 px na entrada) → mistura com o original em Lanczos (IA 35–72%, mais nas fotos pequenas) → nitidez, grão fino, WebP q88. Cada foto tem uma prévia borrada (`blurDataURL`) que aparece na hora.
-- A marca "♡ casamentos.com.br" (sempre no centro, 168×21 px no original) foi removida desfazendo a mistura do branco na luminância e reconstruindo a cor; nas áreas lisas, por inpaint. Nos 4 pubs, a faixa de baixo com a assinatura do fotógrafo foi recortada.
+- Originais em `statics/image`. Tratamento: marca removida no original → restauração inicial com Real-ESRGAN → passe final FSRCNN x2 misturado ao original em Lanczos (72%) → nitidez leve → WebP q92, com até 3840 px no lado maior. Cada foto tem uma prévia borrada (`blurDataURL`) que aparece na hora.
+- A marca "♡ casamentos.com.br" (sempre no centro, 168×21 px no original) foi removida desfazendo a mistura do branco na luminância e reconstruindo a cor; nas áreas lisas, por inpaint. Nas 4 fotos do Pup Noivo, a faixa de baixo com a assinatura do fotógrafo foi recortada.
 - Para trocar/adicionar fotos: colocar em `public/images/fotos` e cadastrar em `src/content/photos.ts`.
 
 ## O que já veio da base (Liac)
@@ -102,7 +102,7 @@ src/
 
 - Av. Otacílio Negrão de Lima, 7180 · Bandeirantes (Pampulha) · BH · CEP 31365-450
 - 50 a 300 convidados · 1 evento por dia
-- Alameda de jabuticabeiras, gazebo, jardins, suíte da noiva, pub do noivo, spa, área kids, pista, cozinha, estacionamento, acessibilidade
+- Alameda de jabuticabeiras, gazebo, jardins, Spa da Noiva, Pup Noivo, área kids, pista, cozinha, estacionamento, acessibilidade
 - Nota 4,7 com 51 avaliações · mais de 370 casais · 6 prêmios Casamentos Awards (2018–2024)
 
 ## Pendências com o cliente

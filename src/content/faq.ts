@@ -29,7 +29,7 @@ export const faqGroups: FaqGroup[] = [
       {
         question: 'Existe espaço para a noiva e o noivo se prepararem?',
         answer:
-          'Sim. O Lanai tem suíte da noiva para o making of e pub do noivo, com sinuca e lounge, para os anfitriões se prepararem com privacidade.',
+          'Sim. O Lanai tem Spa da Noiva para o making of e Pup Noivo, com sinuca e lounge, para os anfitriões se prepararem com privacidade.',
         featured: true,
       },
       {

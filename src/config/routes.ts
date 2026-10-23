@@ -19,7 +19,7 @@ export const routes: {
   {
     path: '/nosso-espaco',
     title: 'Nosso espaço',
-    summary: 'Jardim, alameda de jabuticabeiras, gazebo, salão, suíte da noiva, pub do noivo e brinquedoteca.',
+    summary: 'Jardim, alameda de jabuticabeiras, gazebo, salão, Spa da Noiva, Pup Noivo e brinquedoteca.',
     priority: 0.9,
     changeFrequency: 'monthly',
   },

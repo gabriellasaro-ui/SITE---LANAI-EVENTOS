@@ -13,7 +13,7 @@ import { site, whatsappUrl } from '@/config/site'
 
 const title = 'Perguntas frequentes sobre o Lanai Eventos'
 const description =
-  'Capacidade, cerimônia ao ar livre, suíte da noiva, crianças, reserva da data e visitas: respostas rápidas sobre o Lanai Eventos, na Pampulha, em BH.'
+  'Capacidade, cerimônia ao ar livre, Spa da Noiva, crianças, reserva da data e visitas: respostas rápidas sobre o Lanai Eventos, na Pampulha, em BH.'
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/perguntas-frequentes' })
 

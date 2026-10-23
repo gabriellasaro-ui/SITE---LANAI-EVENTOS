@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Bodoni_Moda, Jost } from 'next/font/google'
+import localFont from 'next/font/local'
 import Script from 'next/script'
 import { hasWhatsapp, site } from '@/config/site'
 import { Header } from '@/components/layout/Header'
@@ -13,19 +13,17 @@ import { businessSchema, websiteSchema } from '@/lib/schema'
 import { consentDefaultScript } from '@/lib/consent'
 import './globals.css'
 
-// Serifa clássica com itálicos (títulos) + sem serifa fina e espaçada (textos e rótulos)
-// Didone de alto contraste (moda/luxo); o eixo óptico afina os traços nos tamanhos grandes
-const display = Bodoni_Moda({
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  axes: ['opsz'],
-  variable: '--font-display-family',
-  display: 'swap',
-})
-const sans = Jost({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-sans-family',
+// Tipografia oficial da marca, hospedada localmente para evitar dependência externa no deploy.
+const sansation = localFont({
+  src: [
+    { path: './fonts/Sansation-Light.ttf', weight: '300', style: 'normal' },
+    { path: './fonts/Sansation-LightItalic.ttf', weight: '300', style: 'italic' },
+    { path: './fonts/Sansation-Regular.ttf', weight: '400', style: 'normal' },
+    { path: './fonts/Sansation-Italic.ttf', weight: '400', style: 'italic' },
+    { path: './fonts/Sansation-Bold.ttf', weight: '700', style: 'normal' },
+    { path: './fonts/Sansation-BoldItalic.ttf', weight: '700', style: 'italic' },
+  ],
+  variable: '--font-sansation-family',
   display: 'swap',
 })
 
@@ -75,7 +73,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html
       lang="pt-BR"
-      className={`${display.variable} ${sans.variable}`}
+      className={sansation.variable}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >

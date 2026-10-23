@@ -3,12 +3,12 @@
 /*
  * TOKENS DA MARCA LANAI EVENTOS (fonte: logo em ID VISUAL/)
  * Sálvia #A6B489 · Oliva #566343 · Cacau #6B3F12 · Marfim #F7F3EC · Floresta #1F261C
- * Direção: editorial e sofisticado (high ticket). Serifa clássica com itálicos (eco do "Lanai" cursivo)
- * + sem serifa fina e espaçada. Muito respiro, linhas finas, fotos grandes.
+ * Direção: editorial e sofisticado (high ticket), com Sansation como tipografia principal.
+ * Muito respiro, linhas finas e fotos grandes.
  */
 @theme {
-  --font-display: var(--font-display-family), 'Times New Roman', serif;
-  --font-sans: var(--font-sans-family), system-ui, sans-serif;
+  --font-display: var(--font-sansation-family), 'Trebuchet MS', sans-serif;
+  --font-sans: var(--font-sansation-family), 'Trebuchet MS', sans-serif;
 
   /* Verdes do logo (sálvia → oliva) */
   --color-primary-50: #f4f6ef;

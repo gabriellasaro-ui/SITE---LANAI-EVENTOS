@@ -13,7 +13,7 @@ import { FinalCta } from '@/components/sections/FinalCta'
 
 const title = 'Nosso espaço: jabuticabeiras, jardins e salão'
 const description =
-  'Cerimônia sob a alameda de jabuticabeiras, gazebo, jardins, salão climatizado, suíte da noiva, pub do noivo e brinquedoteca: conheça os ambientes do Lanai, na Pampulha.'
+  'Cerimônia sob a alameda de jabuticabeiras, gazebo, jardins, salão climatizado, Spa da Noiva, Pup Noivo e brinquedoteca: conheça os ambientes do Lanai, na Pampulha.'
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/nosso-espaco' })
 
