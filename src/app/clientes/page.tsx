@@ -15,8 +15,10 @@ import { FinalCta } from '@/components/sections/FinalCta'
 
 const nota = site.rating?.value.toLocaleString('pt-BR', { minimumFractionDigits: 1 })
 
-const title = `Casais e avaliações: nota ${nota} no Casamentos.com.br`
-const description = `Mais de ${facts.couples} casais escolheram o Lanai, na Pampulha: nota ${nota} em ${site.rating?.count} avaliações públicas e ${facts.awards}. Veja as histórias.`
+const total = site.rating?.count.toLocaleString('pt-BR')
+
+const title = `Casais e avaliações: nota ${nota} no ${site.rating?.platform}`
+const description = `Mais de ${facts.couples} casais escolheram o Lanai, na Pampulha: nota ${nota} em ${total} avaliações no ${site.rating?.platform} e ${facts.awards}. Veja as histórias.`
 
 export const metadata: Metadata = pageMetadata({ title, description, path: '/clientes' })
 
@@ -26,10 +28,10 @@ export default function ClientesPage() {
       <JsonLd data={webPageSchema({ path: '/clientes', name: title, description })} />
       <PageHero
         crumb={{ label: 'Clientes', href: '/clientes' }}
-        image={photos.noivaMakingOf}
+        image={photos.entradaEntardecer}
         title="Mais de 370 histórias contadas aqui."
         highlight={{ histórias: 'text-highlight' }}
-        description={`Casais que escolheram o Lanai para o grande dia e deram nota ${nota} no Casamentos.com.br. A prova está em quem viveu cada celebração.`}
+        description={`Casais que escolheram o Lanai para o grande dia e deram nota ${nota} em ${total} avaliações no ${site.rating?.platform}. A prova está em quem viveu cada celebração.`}
       >
         <ButtonLink href={site.rating?.url ?? '/contato'} variant="light" size="lg" icon="arrowUpRight">
           Ver avaliações
@@ -49,7 +51,7 @@ export default function ClientesPage() {
         <MomentsStrip photos={momentsPhotos} />
       </section>
 
-      <FinalCta title="A próxima história pode ser a sua." photo={photos.cerimoniaJabuticabeiras} />
+      <FinalCta title="A próxima história pode ser a sua." photo={photos.altarJabuticabeiras} />
     </>
   )
 }

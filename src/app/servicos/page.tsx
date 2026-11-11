@@ -31,7 +31,7 @@ export default function ServicosPage() {
       <JsonLd data={[webPageSchema({ path: '/servicos', name: title, description }), servicesSchema()]} />
       <PageHero
         crumb={{ label: 'Serviços', href: '/servicos' }}
-        image={photos.saidaNoivos}
+        image={photos.salaoEnvidracado}
         title="Cada celebração com o cenário que ela merece."
         highlight={{ cenário: 'text-highlight' }}
         description="Do casamento completo à renovação de votos, o Lanai reúne natureza, sofisticação e uma equipe dedicada a cada detalhe."
@@ -87,7 +87,7 @@ export default function ServicosPage() {
           </Stagger>
         </div>
       </section>
-      <FinalCta photo={photos.salaoLustre} />
+      <FinalCta photo={photos.salaoLustres} />
     </>
   )
 }

@@ -29,7 +29,7 @@ export function GET() {
     ...(site.openingHours ?? []).map((h) => `- Atendimento (${h.days}): ${h.opens} às ${h.closes}`),
     ...(r
       ? [
-          `- Avaliação: nota ${r.value.toLocaleString('pt-BR')} de 5 no ${r.platform}, com ${r.count} avaliações; mais de ${facts.couples} casais contrataram o espaço (perfil público)`,
+          `- Avaliação: nota ${r.value.toLocaleString('pt-BR')} de 5 no ${r.platform}, com ${r.count.toLocaleString('pt-BR')} avaliações; mais de ${facts.couples} casais contrataram o espaço (perfil público)`,
         ]
       : []),
     `- Como chegar: ${directionsUrl}`,

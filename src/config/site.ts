@@ -16,6 +16,9 @@ const addressQuery = encodeURIComponent(
 /** Perfil público no Casamentos.com.br */
 export const casamentosUrl = 'https://www.casamentos.com.br/salao-casamento/lanai-eventos--e162494'
 
+/** Perfil da Empresa no Google (Google Maps, abre direto na ficha com as avaliações) */
+export const googleProfileUrl = 'https://www.google.com/maps?cid=7060286262978561878'
+
 export const site: SiteConfig = {
   name: 'Lanai Eventos',
   tagline: 'Espaço para casamentos e eventos na Pampulha, em BH',
@@ -66,16 +69,17 @@ export const site: SiteConfig = {
     // TODO: confirmar o CEP nos Correios (o perfil informa 31365-450)
     postalCode: '31365-450',
     country: 'BR',
-    // TODO: coordenadas do pin no Perfil da Empresa no Google
-    geo: undefined,
+    // Pin do Perfil da Empresa no Google (conferido em 11/11/2026)
+    geo: { lat: -19.8548058, lng: -43.9987639 },
     mapsUrl: `https://www.google.com/maps/search/?api=1&query=${addressQuery}`,
     mapsEmbedUrl: `https://www.google.com/maps?q=${addressQuery}&output=embed`,
     landmark: 'na orla da Lagoa da Pampulha',
   },
   // TODO: horário de atendimento comercial
   openingHours: undefined,
-  // Perfil público no Casamentos.com.br (exibido no site; NÃO vai para o schema)
-  rating: { value: 4.7, count: 51, platform: 'Casamentos.com.br', url: `${casamentosUrl}/opinioes` },
+  // Perfil da Empresa no Google, conferido em 11/11/2026 (exibido no site; NÃO vai para o schema).
+  // O Casamentos.com.br tem 4,7 com 51 avaliações; o Google tem muito mais volume, por isso é a nota principal.
+  rating: { value: 4.8, count: 1936, platform: 'Google', url: googleProfileUrl },
   // TODO: razão social e CNPJ
   legal: {
     companyName: undefined,
@@ -88,6 +92,7 @@ export const site: SiteConfig = {
     { label: 'Instagram', href: 'https://www.instagram.com/lanai_eventos/' },
     { label: 'Facebook', href: 'https://www.facebook.com/lanaieventos/' },
     { label: 'Casamentos.com.br', href: casamentosUrl },
+    { label: 'Google', href: googleProfileUrl },
   ],
   // Mesma estrutura de páginas da Liac (TODO: ajustar se a Lanai tiver wireframe próprio)
   nav: [

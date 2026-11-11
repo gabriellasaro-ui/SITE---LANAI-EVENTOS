@@ -28,7 +28,7 @@ export function ManifestoSection() {
             </ButtonLink>
           </div>
         </Reveal>
-        <ArchPhotos left={photos.noivosAltar} right={photos.passarelaJardim} />
+        <ArchPhotos left={photos.alamedaJabuticabeiras} right={photos.noivosPorDoSol} />
       </div>
     </section>
   )

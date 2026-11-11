@@ -23,7 +23,7 @@ export default function NossoEspacoPage() {
       <JsonLd data={webPageSchema({ path: '/nosso-espaco', name: title, description })} />
       <PageHero
         crumb={{ label: 'Nosso espaço', href: '/nosso-espaco' }}
-        image={photos.pergolado}
+        image={photos.loungeJardim}
         title="Um cenário inspirador, em pleno contato com a natureza."
         highlight={{ natureza: 'text-highlight' }}
         description="Amplas áreas verdes, uma alameda de jabuticabeiras e ambientes pensados para cada momento do dia, do making of à pista."
@@ -74,7 +74,7 @@ export default function NossoEspacoPage() {
         </div>
       </section>
 
-      <FinalCta photo={photos.jardimMesas} />
+      <FinalCta photo={photos.lanaiNoite} />
     </>
   )
 }

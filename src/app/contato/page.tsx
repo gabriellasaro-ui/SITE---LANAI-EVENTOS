@@ -36,7 +36,7 @@ export default function ContatoPage() {
       <JsonLd data={webPageSchema({ path: '/contato', name: title, description, type: 'ContactPage' })} />
       <PageHero
         crumb={{ label: 'Fale conosco', href: '/contato' }}
-        image={photos.altarFlores}
+        image={photos.altarJabuticabeiras}
         title="Vamos realizar o seu sonho juntos?"
         highlight={{ sonho: 'text-highlight' }}
         description="Fale com a equipe do Lanai, consulte a disponibilidade da sua data e receba uma proposta para o seu casamento ou celebração."

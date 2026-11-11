@@ -38,14 +38,14 @@ export default function GaleriaPage() {
       />
       <PageHero
         crumb={{ label: 'Galeria', href: '/galeria' }}
-        image={photos.salaoNoite}
+        image={photos.lanaiNoite}
         title="Imagine o seu dia acontecendo aqui."
         highlight={{ aqui: 'text-highlight' }}
         description="Cerimônias entre as árvores, festas no salão e os bastidores de cada casamento no Lanai Eventos, na Pampulha."
       />
       <section className="bg-paper py-24 md:py-28">
         <div className="container-site">
-          <Reveal>
+          <Reveal amount="some">
             <GalleryGrid items={galleryPhotos} />
           </Reveal>
           <Reveal className="border-primary-400 bg-primary-50 text-ink-950/80 mt-10 border-l-2 px-6 py-5">

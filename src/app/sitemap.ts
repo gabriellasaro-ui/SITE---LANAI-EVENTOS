@@ -6,15 +6,19 @@ import { homeServices, services, spaces } from '@/content/venue'
 
 /** Fotos de cada página, para o sitemap de imagens. */
 const pageImages: Record<string, Photo[]> = {
-  '/': [...heroSlides, photos.noivosAltar, photos.passarelaJardim, ...homeServices.map((s) => s.photo)],
-  '/nosso-espaco': [photos.pergolado, ...spaces.flatMap((s) => (s.detail ? [s.photo, s.detail] : [s.photo]))],
-  '/servicos': [photos.saidaNoivos, ...services.map((s) => s.photo)],
+  '/': [...heroSlides, photos.alamedaJabuticabeiras, photos.noivosPorDoSol, ...homeServices.map((s) => s.photo)],
+  '/nosso-espaco': [
+    photos.loungeJardim,
+    photos.lanaiNoite,
+    ...spaces.flatMap((s) => (s.detail ? [s.photo, s.detail] : [s.photo])),
+  ],
+  '/servicos': [photos.salaoEnvidracado, photos.salaoLustres, ...services.map((s) => s.photo)],
   '/galeria': galleryPhotos,
-  '/clientes': [photos.noivaMakingOf, ...momentsPhotos],
-  '/sobre': [photos.salaoDia, photos.corredorFlores, photos.pergoladoMesa, photos.altarFlores],
-  '/contato': [photos.altarFlores],
-  '/perguntas-frequentes': [photos.caminhoJardim],
-  '/trabalhe-conosco': [photos.salaoMesas],
+  '/clientes': [photos.entradaEntardecer, photos.altarJabuticabeiras, ...momentsPhotos],
+  '/sobre': [photos.salaoLustres, photos.floresSuspensas, photos.pergoladoMesaImperial, photos.cerimoniaJardim],
+  '/contato': [photos.altarJabuticabeiras],
+  '/perguntas-frequentes': [photos.recepcaoJardim],
+  '/trabalhe-conosco': [photos.pergoladoLounge],
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

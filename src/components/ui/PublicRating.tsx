@@ -24,13 +24,14 @@ export function Stars({ value, size = 18, className }: { value: number; size?: n
 }
 
 /**
- * Avaliação pública (site.rating, Casamentos.com.br). Exibida no site; não vai para o schema.
+ * Avaliação pública (site.rating, Perfil da Empresa no Google). Exibida no site; não vai para o schema.
  * `variant="card"` = bloco de destaque; `variant="badge"` = selo compacto.
  */
 export function PublicRating({ variant = 'card', className }: { variant?: 'card' | 'badge'; className?: string }) {
   const r = site.rating
   if (!r) return null
   const nota = r.value.toLocaleString('pt-BR', { minimumFractionDigits: 1 })
+  const total = r.count.toLocaleString('pt-BR')
 
   if (variant === 'badge') {
     return (
@@ -50,7 +51,7 @@ export function PublicRating({ variant = 'card', className }: { variant?: 'card'
         </span>
         <Stars value={r.value} />
         <span className="text-ink-950/70 text-sm">
-          {r.count} avaliações no {r.platform}
+          {total} avaliações no {r.platform}
           <span className="sr-only">. Ver avaliações</span>
         </span>
       </a>
@@ -71,7 +72,7 @@ export function PublicRating({ variant = 'card', className }: { variant?: 'card'
       <div>
         <Stars value={r.value} size={24} />
         <p className="font-display mt-3 text-2xl uppercase">
-          {r.count} avaliações · mais de {facts.couples} casais
+          {total} avaliações · mais de {facts.couples} casais
         </p>
         <p className="text-ink-950/65 mt-1">
           Perfil público do {site.name} no {r.platform}.

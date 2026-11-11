@@ -43,16 +43,36 @@ Dia a dia:
 - As fotos otimizadas ficam em cache no volume `lanai-eventos_next-cache`, que sobrevive às atualizações.
 - Os 3 sites do grupo podem rodar no mesmo servidor: Let's Go na porta 3000, Liac na 3001 e Lanai na 3002 (cada um com o próprio `docker compose`).
 
+## Trabalhe conosco → planilha "Cadastro vagas"
+
+As candidaturas dos 3 sites do grupo caem na mesma planilha do Google, cada uma na aba da marca: **LANAI**, **LIAC** e **LETSGO**. Um único Apps Script (`integracoes/planilha-trabalhe-conosco.gs`) recebe o envio e escolhe a aba pelo campo `marca` que os 3 sites já mandam ("Lanai Eventos", "Liac Eventos", "Let's Go Festas"). O código dos sites não muda: só o `.env`.
+
+Instalação (uma vez, por alguém com acesso de **edição** à planilha):
+
+1. Na planilha: Extensões → Apps Script. Apague o conteúdo, cole o arquivo `integracoes/planilha-trabalhe-conosco.gs` e salve.
+2. Engrenagem (Configurações do projeto) → Propriedades do script → adicione `TOKEN` com uma senha longa (letras e números).
+3. Escolha a função `testar` → Executar → autorize. Ela cria as abas com cabeçalho e grava uma linha de teste em cada uma (apague depois).
+4. Implantar → Nova implantação → App da Web · Executar como: **Eu** · Quem pode acessar: **Qualquer pessoa**. Copie a URL que termina em `/exec`.
+5. No `.env` de cada site (Lanai, Liac e Let's Go): `CAREERS_WEBHOOK_URL=https://script.google.com/macros/s/<ID>/exec?token=<TOKEN>` e rode `docker compose up -d` (não precisa de `--build`).
+6. **Teste obrigatório:** envie uma candidatura por cada site e confira a aba. O Apps Script sempre responde "200"; se o token estiver errado ele não grava e o site não percebe.
+
+- Colunas: Data, Nome, WhatsApp, Link WhatsApp, E-mail, Bairro/cidade, Área, Disponibilidade, Experiência, Currículo, Consentimento LGPD, Marca, Status (entra como "Novo") e Observações (as duas últimas são para o RH).
+- Só grava candidaturas (`tipo: "trabalhe-conosco"`); orçamentos são ignorados. Marca desconhecida vai para a aba OUTROS. Textos que começam com `=`, `+`, `-` ou `@` não viram fórmula.
+- Abrir a URL `/exec` no navegador mostra `{"ok":true,...}`: serve para conferir se está no ar.
+- Ao alterar o script: Implantar → Gerenciar implantações → editar → Nova versão (a URL continua a mesma).
+- A planilha guarda dados pessoais (LGPD): compartilhe só com quem cuida da seleção.
+
 ## Estrutura
 
 ```
 ID VISUAL/                  material recebido do cliente (cor + logo)
 referência/                 wireframe/copy aprovados, se houver
-statics/image               originais: casamentos-com-br/, site-antigo/, logo-x4.png e photos-map.json
+statics/image               originais antigos: casamentos-com-br/, site-antigo/, logo-x4.png e photos-map.json
+                            (os originais do ensaio novo ficam na pasta do Lanai no Google Drive, não no repositório)
                             (chave, arquivo, medidas, categoria, legenda e alt de cada foto; gera src/content/photos.ts)
-public/images/fotos         35 fotos tratadas em WebP (super-resolução preservando o original, até 3840 px)
+public/images/fotos         45 fotos em WebP, até 3840 px: 26 do ensaio profissional (Drive, out/2026) + 19 anteriores
 public/images/marca         logo horizontal e vertical (colorido e marfim), PNG + WebP leve, ícones
-public/images/og            imagens de compartilhamento 1200x630
+public/images/og            imagens de compartilhamento 1200x630 (foto do topo da página + véu + logo + subtítulo)
 src/
   app/                      home, nosso espaço, serviços, clientes, sobre, galeria, FAQ, contato, trabalhe conosco,
                             política de privacidade, 404, sitemap, robots, manifest, llms.txt
@@ -78,7 +98,8 @@ src/
 
 ## Fotos
 
-- Originais em `statics/image`. Tratamento: marca removida no original → restauração inicial com Real-ESRGAN → passe final FSRCNN x2 misturado ao original em Lanczos (72%) → nitidez leve → WebP q92, com até 3840 px no lado maior. Cada foto tem uma prévia borrada (`blurDataURL`) que aparece na hora.
+- **Ensaio profissional (out/2026)**: 30 fotos recebidas na pasta do Lanai no Google Drive; 26 selecionadas. Ficaram de fora 4: uma em baixa resolução com telão ao fundo (WhatsApp), duas com marca d'água de fotógrafo e uma foto de grupo (madrinhas) que não mostra o espaço. Tratamento sem IA: conversão para sRGB (uma estava em Adobe RGB), redução em Lanczos para no máximo 3840 px com nitidez leve só nas reduzidas, sem metadados (EXIF/GPS), WebP q90. São as protagonistas: topo da home, ambientes, serviços, momentos e topos das páginas.
+- **Fotos anteriores** (mantidas só onde ainda não há foto nova: Pup Noivo, brinquedoteca, pista à noite, Spa da Noiva com o letreiro e cerimônia noturna). Originais em `statics/image`. Tratamento: marca removida no original → restauração inicial com Real-ESRGAN → passe final FSRCNN x2 misturado ao original em Lanczos (72%) → nitidez leve → WebP q92, com até 3840 px no lado maior. Cada foto tem uma prévia borrada (`blurDataURL`) que aparece na hora.
 - A marca "♡ casamentos.com.br" (sempre no centro, 168×21 px no original) foi removida desfazendo a mistura do branco na luminância e reconstruindo a cor; nas áreas lisas, por inpaint. Nas 4 fotos do Pup Noivo, a faixa de baixo com a assinatura do fotógrafo foi recortada.
 - Para trocar/adicionar fotos: colocar em `public/images/fotos` e cadastrar em `src/content/photos.ts`.
 
@@ -98,17 +119,20 @@ src/
 - Fotos: realce com IA **misturado** ao original (nunca IA pura, que deixa rosto "de cera").
 - Muita animação, grids alinhados, header com respiro.
 
-## Dados confirmados (perfil público no Casamentos.com.br, 05/10/2026)
+## Dados confirmados (Casamentos.com.br em 05/10/2026; Google em 11/11/2026)
 
 - Av. Otacílio Negrão de Lima, 7180 · Bandeirantes (Pampulha) · BH · CEP 31365-450
 - 50 a 300 convidados · 1 evento por dia
 - Alameda de jabuticabeiras, gazebo, jardins, Spa da Noiva, Pup Noivo, área kids, pista, cozinha, estacionamento, acessibilidade
-- Nota 4,7 com 51 avaliações · mais de 370 casais · 6 prêmios Casamentos Awards (2018–2024)
+- Google: nota 4,8 com 1.936 avaliações (é a nota exibida no site) · pin em -19.8548058, -43.9987639
+- Casamentos.com.br: nota 4,7 com 51 avaliações · mais de 370 casais · 6 prêmios Casamentos Awards (2018–2024)
+- Depoimentos: avaliações nota 5 do Google e do Casamentos.com.br e do site antigo, com o texto original (`src/content/testimonials.ts`)
 
 ## Pendências com o cliente
 
 - [ ] **Logo em vetor (SVG/PDF)** e nomes das fontes oficiais, se houver
 - [ ] Confirmar se **WhatsApp (31) 99471-0070, telefone (31) 3318-8020, e-mail e Instagram** do site antigo seguem ativos
-- [ ] Fotos novas e em alta (as atuais vêm de perfis públicos e foram reconstruídas)
+- [x] Fotos novas e em alta (ensaio do Drive, out/2026)
+- [ ] Fotos novas do Pup Noivo, brinquedoteca e pista/festa à noite (ainda são as antigas, reconstruídas)
 - [ ] Faz parte do Grupo Let's Go Festas? (a Liac exibe isso no rodapé e no JSON-LD)
-- [ ] Horário de atendimento, CEP pelos Correios, coordenadas do Google, razão social e CNPJ
+- [ ] Horário de atendimento, CEP pelos Correios, razão social e CNPJ

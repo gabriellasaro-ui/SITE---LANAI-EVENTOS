@@ -17,7 +17,7 @@ export function TestimonialsSection({ full = false }: { full?: boolean }) {
               Nas palavras de quem <span className="text-highlight-dark">viveu o grande dia.</span>
             </>
           }
-          description="Avaliações publicadas no Casamentos.com.br e depoimentos de casais que celebraram no Lanai, com o texto original."
+          description="Avaliações publicadas no Google e no Casamentos.com.br por casais e convidados que celebraram no Lanai, com o texto original."
           action={
             full ? undefined : (
               <ButtonLink href="/clientes" variant="outline-dark" icon="arrowRight">

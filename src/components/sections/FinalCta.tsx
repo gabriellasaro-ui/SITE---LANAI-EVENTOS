@@ -19,7 +19,7 @@ export function FinalCta({
   title = 'Vamos realizar o seu sonho juntos.',
   description = 'Conte para a equipe o que você está planejando. Apresentamos o espaço, entendemos o estilo da sua celebração e mostramos cada possibilidade do Lanai.',
   cta = 'Solicite uma proposta',
-  photo = photos.pergoladoDoces,
+  photo = photos.mesaDeDoces,
 }: Props) {
   return (
     <section className="bg-ink-950 grain relative isolate flex min-h-[86svh] items-center overflow-hidden py-32 text-center text-white">

@@ -3,7 +3,7 @@ import { Eyebrow } from '@/components/ui/SectionHeading'
 import { CountUp } from '@/components/motion/Effects'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/Reveal'
 
-/** Números do perfil público (Casamentos.com.br), em bloco floresta com grão. */
+/** Números públicos (Google e Casamentos.com.br), em bloco floresta com grão. */
 export function NumbersSection() {
   const nota = site.rating?.value.toLocaleString('pt-BR', { minimumFractionDigits: 1 })
   const items = [
@@ -22,7 +22,7 @@ export function NumbersSection() {
           <span className="text-[0.45em] not-italic">/5</span>
         </>
       ),
-      label: `nota em ${site.rating?.count} avaliações públicas`,
+      label: `nota em ${site.rating?.count.toLocaleString('pt-BR')} avaliações no ${site.rating?.platform}`,
     },
     { value: <CountUp to={6} duration={1} />, label: 'prêmios Casamentos Awards (2018–2024)' },
     { value: <CountUp to={facts.eventsPerDay} duration={0.6} />, label: 'evento por dia: o espaço inteiro para você' },

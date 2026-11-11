@@ -39,7 +39,7 @@ export default function SobrePage() {
       <JsonLd data={webPageSchema({ path: '/sobre', name: title, description, type: 'AboutPage' })} />
       <PageHero
         crumb={{ label: 'Sobre nós', href: '/sobre' }}
-        image={photos.salaoDia}
+        image={photos.salaoLustres}
         title="Vivemos de detalhes."
         highlight={{ detalhes: 'text-highlight' }}
         description="Um espaço onde sofisticação e natureza se encontram, para que cada celebração seja mais do que um evento: uma história a ser contada."
@@ -62,7 +62,7 @@ export default function SobrePage() {
               segundo o Casamentos.com.br.
             </p>
           </Reveal>
-          <ArchPhotos left={photos.corredorFlores} right={photos.pergoladoMesa} />
+          <ArchPhotos left={photos.floresSuspensas} right={photos.pergoladoMesaImperial} />
         </div>
       </section>
 
@@ -86,7 +86,7 @@ export default function SobrePage() {
       <section className="bg-paper py-28 md:py-36">
         <div className="container-site grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <ImageReveal
-            photo={photos.altarFlores}
+            photo={photos.cerimoniaJardim}
             sizes="(min-width: 1024px) 680px, 100vw"
             className="photo-frame aspect-[4/3] w-full"
           />
